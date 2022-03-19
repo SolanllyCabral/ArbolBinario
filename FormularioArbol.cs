@@ -134,15 +134,6 @@ namespace ArbolBinario
 
         private void btnPreorden_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtDato.Text))
-            {
-                MessageBox.Show("No hay datos en el Arbol");
-                txtDato.Focus();
-                return;
-
-            }
-            else
-            {
                 this.Cursor = Cursors.WaitCursor;
                 Refresh();
                 txtDato.Clear();
@@ -151,20 +142,10 @@ namespace ArbolBinario
                 mi_Arbol.colorear(g, this.Font, Brushes.Blue, Brushes.White, Pens.Black, mi_Arbol.Raiz, false, false, true);
                 habilitarButtons();
                 this.Cursor = Cursors.Default;
-            }
         }
 
         private void btnInorden_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtDato.Text))
-            {
-                MessageBox.Show("No hay datos en el Arbol");
-                txtDato.Focus();
-                return;
-
-            }
-            else
-            {
                 this.Cursor = Cursors.WaitCursor;
                 Refresh();
                 txtDato.Clear();
@@ -173,20 +154,10 @@ namespace ArbolBinario
                 mi_Arbol.colorear(g, this.Font, Brushes.Blue, Brushes.White, Pens.Black, mi_Arbol.Raiz, false, true, false);
                 habilitarButtons();
                 this.Cursor = Cursors.Default;
-            }
         }
 
         private void btnPostorden_Click_1(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(txtDato.Text))
-            {
-                MessageBox.Show("No hay datos en el Arbol");
-                txtDato.Focus();
-                return;
-
-            }
-            else
-            {
                 this.Cursor = Cursors.WaitCursor;
                 Refresh();
                 txtDato.Clear();
@@ -195,7 +166,6 @@ namespace ArbolBinario
                 mi_Arbol.colorear(g, this.Font, Brushes.Blue, Brushes.White, Pens.Black, mi_Arbol.Raiz, true, false, false);
                 habilitarButtons();
                 this.Cursor = Cursors.Default;
-            }
         }
 
         private void FormularioArbol_MouseClick(object sender, MouseEventArgs e)
